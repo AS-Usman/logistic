@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Usman | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="brand">
+            <h2>Shaik Usman</h2>
+            <p>Python & ML Developer</p>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy fade-in-up">
+                <span class="eyebrow">Interactive Portfolio</span>
+                <h1>Hi, I am <span class="typing"></span></h1>
+                <p>Building intelligent logistics solutions, predictive models, and polished experiences for data-driven teams.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                </div>
+                <div class="hero-badges">
+                    <span>AI</span>
+                    <span>Data Science</span>
+                    <span>Python</span>
+                    <span>Web UI</span>
+                </div>
+            </div>
+            <div class="hero-panel fade-in-up delay-1">
+                <div class="status-card">
+                    <span>Projects</span>
+                    <h3>12+</h3>
+                </div>
+                <div class="status-card">
+                    <span>Experience</span>
+                    <h3>AI & ML</h3>
+                </div>
+                <div class="status-card">
+                    <span>Focus</span>
+                    <h3>Logistics</h3>
+                </div>
+            </div>
+            <div class="hero-deco"></div>
+        </section>
+
+        <section class="section-block" id="about">
+            <div class="section-heading fade-in-up">
+                <p class="section-label">About Me</p>
+                <h2>Curious builder of intelligent systems.</h2>
+            </div>
+            <div class="glass about-card fade-in-up delay-1">
+                <p>I'm a Computer Science student passionate about Artificial Intelligence, Machine Learning, Data Science, and frontend development. I enjoy transforming complex logistics datasets into reliable, user-friendly applications.</p>
+                <p>Currently I am working on <strong>SupplyIQ</strong>, a delivery delay and route risk predictor, during my internship.</p>
+            </div>
+        </section>
+
+        <section class="section-block" id="skills">
+            <div class="section-heading fade-in-up">
+                <p class="section-label">Skills</p>
+                <h2>Tools I use every day.</h2>
+            </div>
+            <div class="skills-grid fade-in-up delay-1">
+                <div class="skill-card" data-value="95%">
+                    <h3>Python</h3>
+                    <div class="skill-bar"><span data-fill="95%"></span></div>
+                </div>
+                <div class="skill-card" data-value="88%">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-bar"><span data-fill="88%"></span></div>
+                </div>
+                <div class="skill-card" data-value="90%">
+                    <h3>HTML & CSS</h3>
+                    <div class="skill-bar"><span data-fill="90%"></span></div>
+                </div>
+                <div class="skill-card" data-value="85%">
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar"><span data-fill="85%"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block" id="projects">
+            <div class="section-heading fade-in-up">
+                <p class="section-label">Projects</p>
+                <h2>Recent work with real impact.</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card interactive-card fade-in-up delay-1">
+                    <span class="project-pill">Logistics AI</span>
+                    <h3>SupplyIQ Predictor</h3>
+                    <p>Predicting delivery delays and route risks with a production-ready machine learning pipeline.</p>
+                </article>
+                <article class="project-card interactive-card fade-in-up delay-2">
+                    <span class="project-pill">Computer Vision</span>
+                    <h3>Vehicle Classifier</h3>
+                    <p>Vehicle image classifier built with TensorFlow & Keras, optimized for real-world inference.</p>
+                </article>
+                <article class="project-card interactive-card fade-in-up delay-3">
+                    <span class="project-pill">Web Design</span>
+                    <h3>Portfolio Website</h3>
+                    <p>A sleek responsive portfolio built with modern layouts, animations, and accessible design.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block" id="contact">
+            <div class="section-heading fade-in-up">
+                <p class="section-label">Contact</p>
+                <h2>Let's connect.</h2>
+            </div>
+            <div class="contact-grid fade-in-up delay-1">
+                <div class="glass contact-card">
+                    <h3>Get in touch</h3>
+                    <p><strong>Email:</strong> <a href="mailto:achakatlashaikusman172@gmail.com">achakatlashaikusman172@gmail.com</a></p>
+                    <p><strong>Phone:</strong> +91 7989752536</p>
+                    <p><strong>Location:</strong> India</p>
+                    <a href="mailto:achakatlashaikusman172@gmail.com" class="btn btn-primary">Send Email</a>
+                </div>
+                <div class="glass contact-card">
+                    <h3>Ready to build?</h3>
+                    <p>If you need logistics intelligence, predictive systems, or polished dashboards, I can help bring your project to life.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Shaik Usman | Interactive Portfolio</p>
+    </footer>
+
+    <div class="cursor"></div>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section[id]');
+        const revealItems = document.querySelectorAll('.fade-in-up');
+        const typingElement = document.querySelector('.typing');
+        const skillSpans = document.querySelectorAll('.skill-bar span');
+        const cards = document.querySelectorAll('.interactive-card');
+        const cursor = document.querySelector('.cursor');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            navToggle.classList.toggle('open');
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                const link = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    navItems.forEach(item => item.classList.remove('active'));
+                    if (link) link.classList.add('active');
+                }
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                    if (entry.target.classList.contains('skills-grid')) {
+                        skillSpans.forEach(span => {
+                            span.style.width = span.dataset.fill;
+                        });
+                    }
+                }
+            });
+        }, { threshold: 0.2 });
+
+        revealItems.forEach(item => observer.observe(item));
+
+        const roles = ['Python Developer', 'Machine Learning Enthusiast', 'AI Explorer', 'Logistics Innovator'];
+        let currentRole = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeRole() {
+            const currentText = roles[currentRole];
+            const displayed = isDeleting ? currentText.slice(0, charIndex--) : currentText.slice(0, charIndex++);
+            typingElement.textContent = displayed;
+
+            if (!isDeleting && charIndex > currentText.length) {
+                isDeleting = true;
+                setTimeout(typeRole, 1200);
+                return;
+            }
+            if (isDeleting && charIndex < 0) {
+                isDeleting = false;
+                currentRole = (currentRole + 1) % roles.length;
+                setTimeout(typeRole, 300);
+                return;
+            }
+            setTimeout(typeRole, isDeleting ? 80 : 120);
+        }
+
+        typeRole();
+
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (event) => {
+                const rect = card.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width - 0.5;
+                const y = (event.clientY - rect.top) / rect.height - 0.5;
+                card.style.setProperty('--x', x);
+                card.style.setProperty('--y', y);
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.setProperty('--x', 0);
+                card.style.setProperty('--y', 0);
+            });
+        });
+
+        document.addEventListener('mousemove', (event) => {
+            cursor.style.left = `${event.clientX}px`;
+            cursor.style.top = `${event.clientY}px`;
+        });
+
+        document.querySelectorAll('a, .btn, .project-card, .nav-toggle').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
