@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteSense - Logistics Intelligence Suite</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">    
+        <div class="logo">
+            <i class="fas fa-truck-fast"></i> RouteSense
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#stats">Dashboard</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <div class="menu-btn" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="hero-greeting" id="heroGreeting">Hello, Usman</p>
+            <h1>AI-Driven Route Intelligence for Modern Logistics</h1>
+            <p>
+                Unlock proactive delivery planning with live risk scoring, weather-aware reroutes,
+                and predictive alerts for every shipment.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#features" class="btn">Explore Solutions</a>
+                <a href="#stats" class="btn btn-outline">See Insights</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://cdn-icons-png.flaticon.com/512/4144/4144331.png" alt="Logistics dashboard illustration">
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <h2>Intelligent Logistics Features</h2>
+
+        <div class="feature-container">
+
+            <div class="card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Smart ETA Forecasts</h3>
+                <p>Stay ahead with shipment arrival estimates that adapt in real time.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Risk Signal Dashboard</h3>
+                <p>Detect route vulnerabilities and prioritize safe delivery paths.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-cloud-sun-rain"></i>
+                <h3>Weather-Aware Routing</h3>
+                <p>Automatically adjust routes based on live weather conditions.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Fleet Health Alerts</h3>
+                <p>Monitor vehicle readiness and prevent disruptions before they happen.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-robot"></i>
+                <h3>Dispatch Automation</h3>
+                <p>Reduce manual work with intelligent load balancing and scheduling.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-signal"></i>
+                <h3>Supply Chain Pulse</h3>
+                <p>Visualize live performance metrics across every delivery corridor.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="https://cdn-icons-png.flaticon.com/512/2942/2942813.png">
+        </div>
+
+        <div class="about-text">
+            <h2>About the Platform</h2>
+            <p>
+                RouteSense delivers actionable logistics insights by turning complex data streams
+                into a unified operations command center. It helps planners, dispatchers, and
+                drivers make smarter decisions in real time.
+            </p>
+
+            <p>
+                With predictive alerts, adaptive routing, fleet condition monitoring, and risk
+                scoring, the platform keeps deliveries on schedule and operations running smoothly.
+            </p>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats reveal" id="stats">
+
+        <div class="dashboard-header">
+            <div>
+                <h2>Interactive Operations Dashboard</h2>
+                <p>Toggle data views to explore delivery performance, risk levels, fleet readiness,
+                    and weather impact across the network.</p>
+            </div>
+
+            <div class="dashboard-tabs">
+                <button class="dashboard-tab active" data-key="operations">Operations</button>
+                <button class="dashboard-tab" data-key="risk">Risk</button>
+                <button class="dashboard-tab" data-key="fleet">Fleet</button>
+                <button class="dashboard-tab" data-key="weather">Weather</button>
+            </div>
+        </div>
+
+        <div class="dashboard-panel">
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <h4 id="dashboardTitle">Total Deliveries</h4>
+                    <p id="dashboardValue">1,200</p>
+                    <span id="dashboardChange">+8% vs last week</span>
+                </div>
+
+                <div class="summary-card">
+                    <h4 id="secondaryLabel">On-time Score</h4>
+                    <p id="dashboardSecondary">94%</p>
+                    <span id="dashboardSecondaryChange">+4% quality gain</span>
+                </div>
+
+                <div class="summary-card">
+                    <h4 id="tertiaryLabel">Active Routes</h4>
+                    <p id="dashboardTertiary">300</p>
+                    <span id="dashboardTertiaryChange">+12 routes</span>
+                </div>
+            </div>
+
+            <div class="chart-card reveal">
+                <h3 id="chartTitle">Weekly route throughput</h3>
+                <div class="chart-bars" id="chartBars"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section class="register reveal" id="register">
+
+        <h2>Create Your Account</h2>
+        <p class="register-subtitle">Register to unlock live route intelligence, risk alerts, and fleet insights.</p>
+
+        <form id="registerForm" novalidate>
+
+            <div class="form-group">
+                <label for="regName">Full Name</label>
+                <input type="text" id="regName" name="fullname" placeholder="John Doe" autocomplete="name" required>
+                <span class="error-message" id="regNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="regEmail">Email Address</label>
+                <input type="email" id="regEmail" name="email" placeholder="john@example.com" autocomplete="email" required>
+                <span class="error-message" id="regEmailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="regPhone">Phone Number</label>
+                <input type="tel" id="regPhone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" required>
+                <span class="error-message" id="regPhoneError"></span>
+            </div>
+
+            <div class="form-group password-group">
+                <label for="regPassword">Password</label>
+                <div class="password-field">
+                    <input type="password" id="regPassword" name="password" placeholder="Create a password" autocomplete="new-password" required>
+                    <button type="button" class="toggle-password" data-target="regPassword" aria-label="Show password">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="password-strength" id="passwordStrength">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+                <span class="strength-label" id="strengthLabel"></span>
+                <span class="error-message" id="regPasswordError"></span>
+            </div>
+
+            <div class="form-group password-group">
+                <label for="regConfirmPassword">Confirm Password</label>
+                <div class="password-field">
+                    <input type="password" id="regConfirmPassword" name="confirmPassword" placeholder="Re-enter your password" autocomplete="new-password" required>
+                    <button type="button" class="toggle-password" data-target="regConfirmPassword" aria-label="Show password">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <span class="error-message" id="regConfirmPasswordError"></span>
+            </div>
+
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact reveal" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm" novalidate>
+
+            <div class="form-group">
+                <input type="text" id="nameInput" name="name" placeholder="Your Name" autocomplete="name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="emailInput" name="email" placeholder="Your Email" autocomplete="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <textarea rows="5" id="messageInput" name="message" placeholder="Your Message" required></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 RouteSense | Logistics Intelligence Suite</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
