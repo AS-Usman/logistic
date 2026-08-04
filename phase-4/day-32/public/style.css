@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    transition: 0.3s;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #222;
+    color: white;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Home */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    min-height: 55px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+
+/* Buttons */
+
+.main-button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.main-button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* About and Contact */
+
+.page {
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+/* Contact form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* Scroll button */
+
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+
+    cursor: pointer;
+}
+
+
+/* Dark Mode */
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark input,
+body.dark textarea {
+    background: #222;
+    color: white;
+    border-color: #555;
+}
+
+body.dark .main-button {
+    background: white;
+    color: black;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}

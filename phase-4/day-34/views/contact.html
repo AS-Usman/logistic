@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me - My Portfolio</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            My Portfolio
+        </div>
+
+        <div class="nav-links">
+
+            <a href="/">Home</a>
+
+            <a href="/about">About</a>
+
+            <a href="/contact">Contact</a>
+
+            <button id="themeButton">🌙</button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Contact Section -->
+
+    <section class="page contact-page">
+
+        <h1>Contact Me</h1>
+
+        <p class="contact-intro">
+            Have a question or want to work together?
+            Send me a message!
+        </p>
+
+
+        <!-- Contact Form -->
+
+        <form id="contactForm" class="contact-form" novalidate>
+
+            <div class="field-group">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="field-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="field-group">
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter subject"
+                    required
+                >
+            </div>
+
+            <div class="field-group">
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Enter your message"
+                    maxlength="300"
+                    required
+                ></textarea>
+                <div class="message-meta">
+                    <span id="messageError" class="error-text"></span>
+                    <span id="charCount">0/300</span>
+                </div>
+            </div>
+
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+
+            <button
+                type="submit"
+                class="main-button contact-submit"
+            >
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Contact Information -->
+
+    <section class="section">
+
+        <h2>Other Ways to Contact Me</h2>
+
+        <div class="project-container contact-grid">
+
+            <div class="project-card contact-card" data-contact="email">
+
+                <h3>📧 Email</h3>
+
+                <p class="contact-value">
+                    achakatlashaikusman@gmail.com
+                </p>
+
+                <span class="contact-action">Click to copy</span>
+
+            </div>
+
+
+            <div class="project-card contact-card" data-contact="phone">
+
+                <h3>📱 Phone</h3>
+
+                <p class="contact-value">
+                    7989752536
+                </p>
+
+                <span class="contact-action">Click to copy</span>
+
+            </div>
+
+
+            <div class="project-card contact-card" data-contact="location">
+
+                <h3>📍 Location</h3>
+
+                <p class="contact-value">
+                    India
+                </p>
+
+                <span class="contact-action">View details</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <button id="topButton" aria-label="Scroll to top">⬆️</button>
+
+    <!-- JavaScript -->
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
