@@ -1,0 +1,13 @@
+{
+  "name": "day-33",
+  "version": "1.0.0",
+  "description": "Portfolio website using Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.23.2"
+  }
+}
