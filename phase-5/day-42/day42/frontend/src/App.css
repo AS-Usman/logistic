@@ -1,0 +1,30 @@
+.container {
+  width: 500px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 { text-align: center; }
+
+form { display: flex; flex-direction: column; gap: 10px; }
+
+input { padding: 10px; font-size: 16px; }
+
+button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled { background: gray; cursor: not-allowed; }
+
+.message { text-align: center; margin: 20px; font-weight: bold; }
+
+.student {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
