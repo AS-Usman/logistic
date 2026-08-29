@@ -34,6 +34,14 @@ cors_origins = [
 ]
 CORS(app, origins=cors_origins, supports_credentials=True)
 
+# Render/Gunicorn does not execute the __main__ block, so initialize the
+# configured database schema during application startup.
+try:
+    if not init_db():
+        print("Warning: database initialization did not complete successfully.")
+except Exception as exc:
+    print(f"Warning: database initialization failed during startup: {exc}")
+
 try:
     with open(MODEL_PATH, "rb") as model_file:
         MODEL = pickle.load(model_file)

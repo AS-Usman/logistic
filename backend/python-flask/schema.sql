@@ -3,9 +3,6 @@
 -- Schema Definition (Day 36, Day 37 & Day 39)
 -- ===================================================
 
-CREATE DATABASE IF NOT EXISTS supplyiq;
-USE supplyiq;
-
 -- Day 36: Shipments Table
 CREATE TABLE IF NOT EXISTS shipments (
     id INT AUTO_INCREMENT PRIMARY KEY,

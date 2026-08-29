@@ -17,7 +17,13 @@ def get_db_connection(include_db=True):
     if include_db:
         args["database"] = os.getenv("MYSQL_DB", "supplyiq")
 
-    # Optional TLS configuration for managed MySQL providers.
+    # Aiven and other managed MySQL providers require TLS.
+    # mysql-connector-python enables SSL by default; these options make the
+    # intended production behavior explicit while still allowing a CA file.
+    if os.getenv("MYSQL_SSL_REQUIRED", "false").lower() == "true":
+        args["ssl_disabled"] = False
+
+    # Optional TLS CA configuration for providers that require verification.
     ssl_ca = os.getenv("MYSQL_SSL_CA")
     if ssl_ca:
         args["ssl_ca"] = ssl_ca
@@ -31,7 +37,7 @@ def init_db(schema_file=None):
         schema_file = os.path.join(os.path.dirname(__file__), "schema.sql")
 
     try:
-        connection = get_db_connection(include_db=False)
+        connection = get_db_connection(include_db=True)
         cursor = connection.cursor()
         with open(schema_file, "r", encoding="utf-8") as schema:
             statements = [stmt.strip() for stmt in schema.read().split(";") if stmt.strip()]

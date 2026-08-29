@@ -16,12 +16,14 @@ services:
       - key: MYSQL_HOST
         sync: false
       - key: MYSQL_PORT
-        value: "3306"
+        value: "18009"
       - key: MYSQL_USER
         sync: false
       - key: MYSQL_PASSWORD
         sync: false
       - key: MYSQL_DB
-        value: supplyiq
+        value: defaultdb
+      - key: MYSQL_SSL_REQUIRED
+        value: "true"
       - key: CORS_ORIGINS
         sync: false
