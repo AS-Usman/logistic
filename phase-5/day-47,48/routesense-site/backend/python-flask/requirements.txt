@@ -1,0 +1,8 @@
+Flask>=3.0,<4
+mysql-connector-python>=8.0,<10
+python-dotenv>=1.0,<2
+flask-cors>=4.0,<7
+scikit-learn>=1.6,<2
+numpy>=1.26,<3
+pandas>=2.2,<3
+gunicorn>=22,<24

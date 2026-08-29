@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Frontend build
+frontend/dist/
+
+# Deployment tooling
+.vercel/
+
+# Local IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
